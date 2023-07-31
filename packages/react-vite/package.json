@@ -1,0 +1,19 @@
+{
+  "name": "react-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --parallel --filter \"./**\" build",
+    "dev": "pnpm --parallel --filter \"./**\" dev",
+    "build:remotes": "pnpm --parallel --filter \"./remote\" build",
+    "dev:remotes": "pnpm --parallel --filter \"./remote\" dev",
+    "dev:hosts": "pnpm --filter \"./host\" dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.2.3"
+  }
+}
